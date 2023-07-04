@@ -2,13 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://colorful115.github.io/</id>
     <title>Colorful115&apos;s Space</title>
-    <updated>2023-07-04T12:44:21.723Z</updated>
+    <updated>2023-07-04T12:55:24.214Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://colorful115.github.io/"/>
     <link rel="self" href="https://colorful115.github.io/atom.xml"/>
     <logo>https://colorful115.github.io/images/avatar.png</logo>
     <icon>https://colorful115.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, Colorful115&apos;s Space</rights>
+    <entry>
+        <title type="html"><![CDATA[测试]]></title>
+        <id>https://colorful115.github.io/post/ce-shi/</id>
+        <link href="https://colorful115.github.io/post/ce-shi/">
+        </link>
+        <updated>2023-07-04T12:47:47.000Z</updated>
+        <content type="html"><![CDATA[<p>「 湖上西风斜日，荷花落尽红英 」</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[设计网站分享]]></title>
         <id>https://colorful115.github.io/post/other/</id>
