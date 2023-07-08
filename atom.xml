@@ -2,13 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://colorful115.github.io/</id>
     <title>Colorful115&apos;s Space</title>
-    <updated>2023-07-07T16:40:56.380Z</updated>
+    <updated>2023-07-08T13:33:15.833Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://colorful115.github.io/"/>
     <link rel="self" href="https://colorful115.github.io/atom.xml"/>
     <logo>https://colorful115.github.io/images/avatar.png</logo>
     <icon>https://colorful115.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, Colorful115&apos;s Space</rights>
+    <entry>
+        <title type="html"><![CDATA[每日60秒早报]]></title>
+        <id>https://colorful115.github.io/post/mei-ri-60-miao-zao-bao/</id>
+        <link href="https://colorful115.github.io/post/mei-ri-60-miao-zao-bao/">
+        </link>
+        <updated>2023-07-08T12:58:48.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://v2.alapi.cn/api/zaobao?token=iuP2hV0taYXVP4hn&amp;format=image" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://cn.widgetstore.net/view/index.html?q=b69f67c062af00d807c80a7605e48aa3.15f93bb764a4160b000c4cc37023e28f" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[测试]]></title>
         <id>https://colorful115.github.io/post/ce-shi/</id>
