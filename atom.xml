@@ -2,50 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://colorful115.github.io/</id>
     <title>Colorful115&apos;s Space</title>
-    <updated>2023-07-14T16:01:48.085Z</updated>
+    <updated>2023-07-14T16:04:31.554Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://colorful115.github.io/"/>
     <link rel="self" href="https://colorful115.github.io/atom.xml"/>
     <logo>https://colorful115.github.io/images/avatar.png</logo>
     <icon>https://colorful115.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, Colorful115&apos;s Space</rights>
-    <entry>
-        <title type="html"><![CDATA[测试]]></title>
-        <id>https://colorful115.github.io/post/ce-shi/</id>
-        <link href="https://colorful115.github.io/post/ce-shi/">
-        </link>
-        <updated>2023-07-14T14:58:27.000Z</updated>
-        <content type="html"><![CDATA[<div id="external-data-container"></div>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script type="module">
-
-   const fetchData = async () => {
-  // 使用axios或其他工具发送API请求，获取外部数据
-  const response = await axios.get('https://v2.alapi.cn/api/zaobao?token=iuP2hV0taYXVP4hn&format=json');
- 
-  const externalData = response.data.data;
-  // 将外部数据渲染到页面中
-
-  const div = document.createElement('div')
-
-//   div.innerHTML = `
-//     <p>${externalData.news}</p>
-//     <h3>${externalData.weiyu}</h3>
-    
-//   `;
-  externalData.news.forEach((item,index,arr)=>{
-    div.innerHTML += `<p>${item}</p>`
-  })
-
-div.innerHTML += `<h3>${externalData.weiyu}</h3>`
-  // 将渲染后的元素添加到页面中的某个特定位置，比如具有特定ID的元素
-  const targetElement = document.getElementById('external-data-container');
-  targetElement.appendChild(div);
-};
-
-fetchData();
-</script>]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[数据请求测试]]></title>
         <id>https://colorful115.github.io/post/shu-ju-qing-qiu-ce-shi/</id>
@@ -57,25 +20,21 @@ fetchData();
 <script type="module">
 
    const fetchData = async () => {
-  // 使用axios或其他工具发送API请求，获取外部数据
+ 
   const response = await axios.get('https://v2.alapi.cn/api/zaobao?token=iuP2hV0taYXVP4hn&format=json');
  
   const externalData = response.data.data;
-  // 将外部数据渲染到页面中
+
 
   const div = document.createElement('div')
 
-//   div.innerHTML = `
-//     <p>${externalData.news}</p>
-//     <h3>${externalData.weiyu}</h3>
-    
-//   `;
+
   externalData.news.forEach((item,index,arr)=>{
     div.innerHTML += `<p>${item}</p>`
   })
 
 div.innerHTML += `<h3>${externalData.weiyu}</h3>`
-  // 将渲染后的元素添加到页面中的某个特定位置，比如具有特定ID的元素
+
   const targetElement = document.getElementById('external-data-container');
   targetElement.appendChild(div);
 };
