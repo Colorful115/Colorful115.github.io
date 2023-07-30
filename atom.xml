@@ -2,13 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://colorful115.github.io/</id>
     <title>Colorful115&apos;s Space</title>
-    <updated>2023-07-18T13:25:04.239Z</updated>
+    <updated>2023-07-30T14:52:44.835Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://colorful115.github.io/"/>
     <link rel="self" href="https://colorful115.github.io/atom.xml"/>
     <logo>https://colorful115.github.io/images/avatar.png</logo>
     <icon>https://colorful115.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, Colorful115&apos;s Space</rights>
+    <entry>
+        <title type="html"><![CDATA[摄影-落日]]></title>
+        <id>https://colorful115.github.io/post/DukvHkwNm/</id>
+        <link href="https://colorful115.github.io/post/DukvHkwNm/">
+        </link>
+        <updated>2023-07-30T13:08:41.000Z</updated>
+        <content type="html"><![CDATA[<p>地点：漯河市<br>
+时间：19时30分<br>
+事件：台风“杜苏芮”</p>
+<figure data-type="image" tabindex="1"><img src="https://colorful115.github.io//post-images/1690722571358.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[面具（chatgpt精选优秀指令）]]></title>
         <id>https://colorful115.github.io/post/omEuRZEo_/</id>
@@ -44,7 +56,9 @@
 <p>我要你担任编剧。您将为长篇电影或能够吸引观众的网络连续剧开发引人入胜且富有创意的剧本。从想出有趣的角色、故事的背景、角色之间的对话等开始。一旦你的角色发展完成——创造一个充满曲折的激动人心的故事情节，让观众一直悬念到最后。</p>
 </blockquote>
 <h1 id="7小说家">7.小说家</h1>
+<blockquote>
 <p>我想让你扮演一个小说家。您将想出富有创意且引人入胜的故事，可以长期吸引读者。你可以选择任何类型，如奇幻、浪漫、历史小说等——但你的目标是写出具有出色情节、引人入胜的人物和意想不到的高潮的作品。我的第一个要求是“我要写一部以未来为背景的科幻小说”。</p>
+</blockquote>
 <h1 id="8网页设计顾问">8.网页设计顾问</h1>
 <blockquote>
 <p>我想让你担任网页设计顾问。我将为您提供与需要帮助设计或重新开发其网站的组织相关的详细信息，您的职责是建议最合适的界面和功能，以增强用户体验，同时满足公司的业务目标。您应该利用您在 UX/UI 设计原则、编码语言、网站开发工具等方面的知识，以便为项目制定一个全面的计划。我的第一个请求是“我需要帮助创建一个销售珠宝的电子商务网站”。</p>
@@ -65,12 +79,16 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[早报（每日更新）]]></title>
+        <title type="html"><![CDATA[60秒早报]]></title>
         <id>https://colorful115.github.io/post/zaobao/</id>
         <link href="https://colorful115.github.io/post/zaobao/">
         </link>
         <updated>2023-07-14T14:58:27.000Z</updated>
-        <content type="html"><![CDATA[<div id="external-data-container"></div>
+        <summary type="html"><![CDATA[<p>每日更新，精选15条新闻</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>每日更新，精选15条新闻</p>
+<!-- more -->
+<div id="external-data-container"></div>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script type="module">
 
@@ -325,15 +343,6 @@ fetchData();
 <li>关于“资源库”需要提醒的是：资源库包含的是操作进程的数据，但并不包含素材文件本身，当我们将资源库搬迁到另一台电脑进行工作的时候，原来的素材文件也需要相应的路径搬迁，如果有移动工作的需求，可以在最早导入素材的时候，讲素材文件“拷贝到资源库”，这样就可以在搬迁的时候直接移动资源库文件就可以了，不用担心媒体文件的路径等等问题。但是它的问题在于可能会使你的资源库文件过大，难以控制以后的清理工作。</li>
 <li>关于缓存文件和数据清理，当所有的工作完成后，我们可以通过“文件”-删除生成的项目文件，来调出清理窗口。我们也可以在Finder中的影片文件夹下，删除相应的某一个资源库文件以及Final Cut Backups（备份）中的文件。这些数据一旦被清理，就再也无法找回了！！！</li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[设计网站分享]]></title>
-        <id>https://colorful115.github.io/post/other/</id>
-        <link href="https://colorful115.github.io/post/other/">
-        </link>
-        <updated>2023-07-04T12:25:59.000Z</updated>
-        <content type="html"><![CDATA[<p>设计导航：<a href="http://hao.shejidaren.com/">http://hao.shejidaren.com/</a></p>
 ]]></content>
     </entry>
 </feed>
