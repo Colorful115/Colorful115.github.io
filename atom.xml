@@ -2,13 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://colorful115.github.io/</id>
     <title>Colorful115&apos;s Space</title>
-    <updated>2023-07-30T15:44:22.708Z</updated>
+    <updated>2023-08-19T13:38:51.656Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://colorful115.github.io/"/>
     <link rel="self" href="https://colorful115.github.io/atom.xml"/>
     <logo>https://colorful115.github.io/images/avatar.png</logo>
     <icon>https://colorful115.github.io/favicon.ico</icon>
     <rights>All rights reserved 2023, Colorful115&apos;s Space</rights>
+    <entry>
+        <title type="html"><![CDATA[测试视频]]></title>
+        <id>https://colorful115.github.io/post/0819/</id>
+        <link href="https://colorful115.github.io/post/0819/">
+        </link>
+        <updated>2023-08-19T13:27:57.000Z</updated>
+        <content type="html"><![CDATA[<div class="prism-player" id="player-con"></div>
+<script>
+var player = new Aliplayer({
+  "id": "player-con",
+  "source": "//player.alicdn.com/video/aliyunmedia.mp4",
+  "width": "100%",
+  "height": "500px",
+  "autoplay": true,
+  "isLive": false,
+  "rePlay": false,
+  "playsinline": true,
+  "preload": true,
+  "controlBarVisibility": "hover",
+  "useH5Prism": true
+}, function (player) {
+    console.log("The player is created");
+  }
+);
+</script>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[摄影-落日]]></title>
         <id>https://colorful115.github.io/post/DukvHkwNm/</id>
