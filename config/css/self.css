@@ -1,0 +1,139 @@
+/* 设置字体 */
+@font-face {
+  font-family: "issww";
+  src: url("https://npm.elemecdn.com/ethan4116-blog/lib/font/ZhuZiAWan.ttf");
+  /* 字体文件路径 */
+  font-display: swap;
+}
+
+body,
+.gitcalendar {
+  font-family: issww !important;
+}
+
+/* 侧边栏 */
+#switch,
+#next1 {
+  background-color: #6f42c1;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  width: 100px;
+  border: none;
+  margin: 0 6px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+#switch:hover,
+#next1:hover {
+  background-color: var(--text-bg-hover);
+}
+#main #player:hover {
+  box-shadow: none;
+}
+#main-xjj {
+  text-align: center;
+}
+/* box-shadow */
+#aside-content .card-widget,
+#recent-posts > .recent-post-item,
+.cardHover,
+#page,
+#post,
+.error404 #error-wrap .error-content,
+.layout > .recent-posts .pagination > :not(.space),
+.layout > div:first-child:not(.recent-posts) {
+  /* border: 1px solid #dcdcdc !important;
+  box-shadow: none; */
+  box-shadow: 0 0 0 1px #dcdcdc;
+}
+.recent-post-item:hover {
+  box-shadow: 0 0 0 1px #6f42c1 !important;
+}
+.card-widget:hover,
+#page:hover,
+#post:hover {
+  box-shadow: 0 0 0 1px #6f42c1 !important;
+}
+
+/* 隐私墙样式 */
+
+#article-container strong {
+  font-weight: 400 !important;
+  color: #fff;
+  background: #55585a;
+  margin: 0 0.2em;
+  padding: 0.2em 0.4em;
+}
+
+/* 轮播图样式更改 */
+.blog-slider__img {
+  width: 375px !important;
+}
+#recent-posts {
+  position: relative;
+}
+#swiper_container::before {
+  content: "推荐文章";
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  background: #6f42c1;
+  top: 0px;
+  letter-spacing: 1px;
+  left: 10px;
+  font-size: 13px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+}
+
+/* 加密插件 */
+.hbe-input-label-content-wave {
+  display: contents !important;
+}
+/* 轮播图媒体查询修改 */
+
+@media screen and (max-width: 600px) {
+    .blog-slider {
+        min-height: 350px;
+        height: auto;
+        margin-top: 0px !important;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .blog-slider__img {
+      transform: none !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    .blog-slider__content {
+        margin-top: 0px !important;
+        text-align: center;
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .blog-slider__pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+        top: auto !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    .blog-slider__button {
+       margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 15px 0 !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    .blog-slider__pagination .swiper-pagination-bullet-active {
+        height: 5px !important;
+        width: 30px !important;
+    }
+}
