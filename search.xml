@@ -26,4 +26,15 @@
         <tag>博客</tag>
       </tags>
   </entry>
+  <entry>
+    <title>每日新闻</title>
+    <url>/45143/</url>
+    <content><![CDATA[<blockquote>
+<div id="external-data-container"></div>
+
+
+</blockquote>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="module" src="/config/js/news.js"></script>]]></content>
+  </entry>
 </search>
