@@ -138,3 +138,8 @@ body,
         width: 30px !important;
     }
 }
+
+/* 导航样式 */
+#article-container .flink .flink-list > .flink-list-item:hover a{
+  color:#fff 
+}

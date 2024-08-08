@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>每日新闻</title>
+    <url>/45143/</url>
+    <content><![CDATA[<blockquote>
+<div id="external-data-container"></div>
+
+
+</blockquote>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="module" src="/config/js/news.js"></script>]]></content>
+  </entry>
+  <entry>
     <title>记录</title>
     <url>/63608/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试。" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容。">
@@ -25,16 +36,5 @@
         <tag>日记</tag>
         <tag>博客</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>每日新闻</title>
-    <url>/45143/</url>
-    <content><![CDATA[<blockquote>
-<div id="external-data-container"></div>
-
-
-</blockquote>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script type="module" src="/config/js/news.js"></script>]]></content>
   </entry>
 </search>
