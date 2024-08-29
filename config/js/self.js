@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
           if(auto){ player.play()}else{
             player.pause()
           }
-          this.innerText = (auto ? "暂停" : "播放");
+          this.innerText = (auto ? "暂停" : "连续播放");
         });
       
         bind(player, "ended", function () {
