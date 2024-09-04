@@ -143,3 +143,103 @@ body,
 #article-container .flink .flink-list > .flink-list-item:hover a{
   color:#fff 
 }
+
+/* 主页背景图 */
+#page-header.full_page{
+  height: 30vh 
+}
+
+#content-inner{
+  max-width: 1300px;
+}
+@media screen and (max-width: 600px) {
+  #content-inner{
+    width: 95%;
+  }
+  .blog-slider__code{
+    visibility: hidden;
+  }
+  .blog-slider__img{
+    margin-top:-5%;
+    padding: 0 !important
+  }
+  .blog-slider__text{
+    margin-bottom:10px !important
+  }
+  .blog-slider__title{
+    margin-bottom:0px !important
+  }
+}
+
+.site-icon{
+  visibility: hidden;
+}
+/* 文章页模糊 */
+
+@media screen and (max-width: 768px) {
+  #page-header.post-bg {
+      height: 220px !important;
+  }
+}
+/*  */
+
+/* 首页分栏 */
+@media screen and (min-width: 1300px) {
+  .recent-posts{
+    display:flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: space-between;
+    flex: 1;
+    }
+    #recent-posts .recent-post-item:first-child{
+      flex:0 0 100%;
+      flex-direction: row;
+    }
+    
+    #recent-posts .recent-post-item{
+    flex:0 0 calc(50% - 10px);
+    flex-direction: column;
+      height:25em;
+    }
+    #pagination{
+      flex:1 0 100%;
+    }
+    #recent-posts > .recent-post-item .post_cover{
+      width: 100%;
+      height:40em;
+    }
+    #recent-posts > .recent-post-item >.recent-post-info{
+      height: 100%;
+      width: 100%;
+      padding: 18px 32px 18px 32px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+      /* gap: 16px; */
+      /* justify-content: space-between; */
+    }
+    .recent-post-item:hover .article-title{
+      color:#6f42c1 !important
+    }
+    .recent-post-item:hover{
+      background: #55585a;
+    }
+}
+
+/* 新闻页样式 开始 */
+@media screen and (min-width: 600px) {
+  #article-container p{
+    font-size: 18px;
+  }
+}
+#article-container p:nth-of-type(odd){
+   background-color: #8c7da8;  
+   color:#fff
+}
+#article-container p{
+  letter-spacing: 2px;
+}
+/* 新闻页样式 结束 */
