@@ -146,7 +146,7 @@ body,
 
 /* 主页背景图 */
 #page-header.full_page{
-  height: 30vh 
+  height: 30vh !important
 }
 
 #content-inner{
