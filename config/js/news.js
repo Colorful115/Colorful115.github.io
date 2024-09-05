@@ -38,7 +38,7 @@ const fetchData = async () => {
 
   div.innerHTML = `<h2>更新日期:${externalData.date}<h2><img src="${externalData.head_image}"/><h3>${externalData.weiyu}</h3>`;
   externalData.news.forEach((item, index, arr) => {
-    div.innerHTML += `<p>${item}</p>`;
+    div.innerHTML += `<p class="news_p">${item}</p>`;
   });
 
   const targetElement = document.getElementById("external-data-container");
