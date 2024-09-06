@@ -129,10 +129,11 @@ body,
   text-align: start;
 }
 
+
 @media screen and (max-width: 600px) {
   .blog-slider__pagination.swiper-pagination-clickable.swiper-pagination-bullets {
       top: 50% !important;
-      margin-top: 1vh;
+      margin-top: -1vh;
   }
   #swiper_container{
     display: flex;
@@ -144,6 +145,14 @@ body,
   }
   .blog-slider__text:before {  
     content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0"; /* 插入两个不间断空格 */  
+  }
+  .blog-slider__pagination .swiper-pagination-bullet{
+    height:10px !important;
+    width: 10px !important;
+    background: #fff !important;
+  }
+  .recent-post-item:first-child{
+    padding-bottom: 3vh;
   }
 }
 /* 导航样式 */
