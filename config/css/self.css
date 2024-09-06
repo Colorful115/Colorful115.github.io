@@ -108,59 +108,54 @@ body,
 .blog-slider__content .blog-slider__code{
   display:none
 }
+.blog-slider__content{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+}
+/* 结束 */
 
 /* 加密插件 */
 .hbe-input-label-content-wave {
   display: contents !important;
 }
 /* 轮播图媒体查询修改 */
-
-@media screen and (max-width: 600px) {
-    .blog-slider {
-        min-height: 350px;
-        height: auto;
-        margin-top: 0px !important;
-        margin-bottom: 10px;
-    }
+.blog-slider__content{
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
 }
-@media screen and (max-width: 600px) {
-    .blog-slider__img {
-      transform: none !important;
-    }
-}
-@media screen and (max-width: 600px) {
-    .blog-slider__content {
-        margin-top: 0px !important;
-        text-align: center;
-        padding: 0 30px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .blog-slider__pagination.swiper-pagination-clickable.swiper-pagination-bullets {
-        top: auto !important;
-    }
-}
-@media screen and (max-width: 600px) {
-    .blog-slider__button {
-       margin-bottom: 10px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
-        margin: 15px 0 !important;
-    }
-}
-@media screen and (max-width: 600px) {
-    .blog-slider__pagination .swiper-pagination-bullet-active {
-        height: 5px !important;
-        width: 30px !important;
-    }
+.blog-slider__text{
+  text-align: start;
 }
 
+@media screen and (max-width: 600px) {
+  .blog-slider__pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+      top: 50% !important;
+      margin-top: 1vh;
+  }
+  #swiper_container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .blog-slider{
+    margin-top: 0 !important;
+  }
+  .blog-slider__text:before {  
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0"; /* 插入两个不间断空格 */  
+  }
+}
 /* 导航样式 */
 #article-container .flink .flink-list > .flink-list-item:hover a{
   color:#fff 
 }
+#nav a{
+  color:#99a9bf
+}
+#blog-info i{
+  padding:10px
+}
+/* 导航样式结束 */
 
 /* 主页背景图 */
 #page-header.full_page{
@@ -263,7 +258,7 @@ body,
     font-size: 18px;
   }
 }
-#article-container p .news_p:nth-of-type(odd){
+#article-container  .news_p:nth-of-type(odd){
    background-color: #8c7da8;  
    color:#fff
 }
@@ -277,3 +272,4 @@ body,
   box-shadow: none !important;
 }
 /* 分页结束 */
+
