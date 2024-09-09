@@ -7,10 +7,6 @@ var player = new Aliplayer(
     preload: "auto",
     controlBarVisibility: "hover",
     useH5Prism: true,
-    autoplayPolicy: {
-      fallbackToMute: true, // 有声自动播放失败后，是否降级为静音自动播放，默认为false
-      showUnmuteBtn: true, // 静音自动播放时，是否居中显示静音大按钮，默认为true
-    },
     clickPause: true,
     disablePip: false,
   },
@@ -21,8 +17,22 @@ var player = new Aliplayer(
 
 // 获取视频URL
 function getNextVideoUrl() {
-  return "https://www.cunshao.com/666666/api/web.php";
+ var urlNum = " https://www.cunshao.com/666666/api/web.php?_t="+ generateRandom13DigitString()
+//  var urlNum = "https://www.cunshao.com/666666/api/web.php"
+ console.log(urlNum)
+    return urlNum;
 }
+
+function generateRandom13DigitString() {  
+  let randomString = '';  
+  // 首先添加1，以确保它是13位数（如果需要的话）  
+  randomString += '1';  
+  for (let i = 0; i < 12; i++) {  
+    // 生成0到9之间的随机数并转换为字符串，然后拼接到结果字符串上  
+    randomString += Math.floor(Math.random() * 10).toString();  
+  }  
+  return randomString;  
+} 
 
 function changeVideo() {
   var nextVideoUrl = getNextVideoUrl();
