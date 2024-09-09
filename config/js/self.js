@@ -1,44 +1,53 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var player = videojs("my_video_1");
-  var autoPlay = false;
-  var url = "https://www.cunshao.com/666666/api/web.php"; // 视频API
-  // 设置初始视频源
-  player.src({ type: "video/mp4", src: url });
-  // 定义一个函数来更换视频
-  function changeVideo() {
-    player.src({ type: "video/mp4", src: url });
-    player.load();
-    try {
-      player.play();
-    } catch (error) {
-      setTimeout(() => {
-        changeVideo(); // 错误后重试
-      }, 1000);
-    }
+var player = new Aliplayer(
+  {
+    id: "J_prismPlayer",
+    source: "https://www.cunshao.com/666666/api/web.php",
+    autoplay: false,
+    playsinline: true,
+    preload: "auto",
+    controlBarVisibility: "hover",
+    useH5Prism: true,
+    autoplayPolicy: {
+      fallbackToMute: true, // 有声自动播放失败后，是否降级为静音自动播放，默认为false
+      showUnmuteBtn: true, // 静音自动播放时，是否居中显示静音大按钮，默认为true
+    },
+    clickPause: true,
+    disablePip: false,
+  },
+  function (player) {
+    // 监听播放结束事件
   }
+);
 
-  // 添加一个按钮来控制播放/暂停视频
-  var playPauseBtn = document.getElementById("playPauseAutoChange");
+// 获取视频URL
+function getNextVideoUrl() {
+  return "https://www.cunshao.com/666666/api/web.php";
+}
 
-  playPauseBtn.addEventListener("click", function () {
-    if (autoPlay) {
-      player.pause();
-    } else {
-      player.play();
-    }
-    autoPlay = !autoPlay;
-  });
+function changeVideo() {
+  var nextVideoUrl = getNextVideoUrl();
+  if (nextVideoUrl) {
+    player.loadByUrl(nextVideoUrl); // 使用新URL重新加载并播放
+    player.play(); // 播放视频
+  }
+}
 
-  // 添加一个按钮来手动更换视频
-  document.getElementById("changeVideoBtn").addEventListener("click", changeVideo);
-  // 监听视频播放结束事件，更换视频
-  player.on("ended", changeVideo);
-  // 监听播放事件
-  player.on("play", function () {
-    playPauseBtn.innerHTML = "暂停";
-  });
-  // 监听暂停事件
-  player.on("pause", function () {
-    playPauseBtn.innerHTML = "播放";
-  });
+var playPauseBtn = document.getElementById("playBtn");
+var autoPlay = false;
+playPauseBtn.addEventListener("click", function () {
+  if (autoPlay) {
+    player.pause();
+  } else {
+    player.play();
+  }
+  autoPlay = !autoPlay;
+});
+document.getElementById("nextBtn").addEventListener("click", changeVideo);
+player.on("ended", changeVideo);
+player.on("play", function () {
+  playPauseBtn.innerHTML = "暂停";
+});
+// 监听暂停事件
+player.on("pause", function () {
+  playPauseBtn.innerHTML = "播放";
 });

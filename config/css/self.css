@@ -12,8 +12,8 @@ body,
 }
 
 /* 侧边栏 */
-#playPauseAutoChange,
-#changeVideoBtn {
+#playBtn,
+#nextBtn {
   background-color: #6f42c1;
   color: #fff;
   line-height: 40px;
@@ -24,30 +24,29 @@ body,
   border-radius: 6px;
   font-weight: bold;
 }
-#playPauseAutoChange:hover,
-#changeVideoBtn:hover {
+#playBtn:hover,
+#nextBtn:hover {
   background-color: var(--text-bg-hover);
 }
-#xjjVideo .item-content:hover {
+#xjjVideo .item-content video:hover {
   box-shadow: none;
 }
 #xjjVideo{
   text-align: center;
 }
-.item-content .video-js{
+#J_prismPlayer{
     width: 100%;
-    max-height: 650px;
+    max-height: 555px;
+    border-radius: 15px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
-#my_video_1_html5_api:hover{
-  box-shadow: none;
+#J_prismPlayer .prism-big-play-btn{
+  left:50% !important;
+  bottom:50% !important;
+  transform: translate3d(-50%,50%,0);
 }
-.vjs-big-play-button{
-  display:none !important
-}
-.vjs-control-bar{
-  z-index: 1;
-}
+
 /* 侧边栏结束 */
 
 /* box-shadow */
