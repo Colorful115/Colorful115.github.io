@@ -44,6 +44,7 @@ body,
     border-radius: 15px;
     margin-bottom: 10px;
     overflow: hidden;
+    background:transparent !important;
 }
 #J_prismPlayer .prism-big-play-btn{
   left:50% !important;
@@ -52,15 +53,19 @@ body,
 }
 .prism-player video{
   object-fit: cover;
+  z-index: 9;
+}
+.prism-player .prism-text-overlay{
+  z-index: 5 !important;
 }
 /* + */
 .hiddenBtn {  
-  display: none;  
   position: absolute; /* 根据需要调整定位 */  
   list-style-type: none;  
   padding: 0;  
   margin: 0;  
   /* 其他样式如背景、边框等可根据需要添加 */  
+  display:none
 }  
 #optionList{
   z-index: 999;
@@ -76,6 +81,12 @@ body,
      display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.hidden{
+  display:none !important
+}
+.prism-cc-btn{
+  display:none
 }
 
 /* 侧边栏结束 */

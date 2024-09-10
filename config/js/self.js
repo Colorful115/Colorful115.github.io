@@ -83,31 +83,43 @@ var player = new Aliplayer(
     // 监听播放结束事件
   }
 );
-
-// // 获取视频URL
-// function getNextVideoUrl(url) {
-//   console.log("getNext"+url)
-//   var urlNum = "https://sp.4n2.cn/?api="
-//   var urlStr = (typeof url === 'undefined' || url === null) ? "tm" : url;
-//   if(url == "pc"){
-//     urlNum = "https://www.cunshao.com/666666/api/web.php"
-//   }else{
-//     urlNum = urlNum + urlStr
-//   }
-//  console.log(urlNum)
-//     return urlNum;
-// }
  
 var urlCon = "https://sp.4n2.cn/?api=tm"
-  
-document.getElementById('triggerButton').addEventListener('click', function() {  
-  var list = document.getElementById('optionList');  
-  list.classList.toggle('active'); // 切换列表的显示状态  
-});  
+
 var list = document.getElementById('optionList')
+
+document.getElementById('triggerButton').addEventListener('click', function() {  
+  // var list = document.getElementById('optionList');  
+  list.classList.toggle('hidden') 
+});  
+// 鼠标进入
+document.getElementById('triggerButton').addEventListener('mouseenter', function() {  
+  if (list.classList.contains('hidden')) ;
+    list.classList.remove('hidden');  
+});  
+// 鼠标离开
+document.getElementById('optionList').addEventListener('mouseleave', function() {  
+      list.classList.add('hidden');  
+  
+});
+
+  // 为每个li元素添加点击事件监听器  
+  const listItems = document.querySelectorAll('#optionList li');  
+  listItems.forEach(function(item) {  
+      item.addEventListener('click', function(e) {  
+          // 这里不需要阻止事件冒泡，直接隐藏列表  
+          list.classList.add('hidden'); // 点击li时隐藏列表  
+
+          // // 这里添加其他点击li时的逻辑  
+          // console.log('Clicked:', this.textContent); // 示例：在控制台打印被点击的li的文本内容 
+          // console.log(e) 
+      });  
+  });  
+
+
+
 function triggerFunction(option) {  
-    // list.classList.remove('hover-style')
-  // 在这里可以添加更多逻辑，比如根据option的值进行不同的操作  
+  // 获取地址  
   var urlNum = "https://sp.4n2.cn/?api="
   var urlStr = (typeof option === 'undefined' || option === null) ? "tm" : option;
   if(option == "pc"){
