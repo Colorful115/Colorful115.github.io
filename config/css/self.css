@@ -13,19 +13,22 @@ body,
 
 /* 侧边栏 */
 #playBtn,
-#nextBtn {
+#nextBtn,
+#triggerButton,
+#optionList li{
   background-color: #6f42c1;
   color: #fff;
   line-height: 40px;
   text-align: center;
-  width: 100px;
+  width: 80px;
   border: none;
-  margin: 0 6px;
   border-radius: 6px;
   font-weight: bold;
 }
 #playBtn:hover,
-#nextBtn:hover {
+#nextBtn:hover,
+#triggerButton:hover,
+#optionList li:hover{
   background-color: var(--text-bg-hover);
 }
 #xjjVideo .item-content video:hover {
@@ -33,6 +36,7 @@ body,
 }
 #xjjVideo{
   text-align: center;
+  overflow: visible !important;
 }
 #J_prismPlayer{
     width: 100%;
@@ -45,6 +49,33 @@ body,
   left:50% !important;
   bottom:50% !important;
   transform: translate3d(-50%,50%,0);
+}
+.prism-player video{
+  object-fit: cover;
+}
+/* + */
+.hiddenBtn {  
+  display: none;  
+  position: absolute; /* 根据需要调整定位 */  
+  list-style-type: none;  
+  padding: 0;  
+  margin: 0;  
+  /* 其他样式如背景、边框等可根据需要添加 */  
+}  
+#optionList{
+  z-index: 999;
+}
+#optionList li{
+  margin-top:2px;
+}
+.button-cont:hover #optionList,  
+#optionList.active {  
+  display: block;  
+}
+.button-container{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 /* 侧边栏结束 */
