@@ -70,7 +70,7 @@
 var player = new Aliplayer(
   {
     id: "J_prismPlayer",
-    source: "https://sp.4n2.cn/?api=tm",
+    source: "https://txmov2.a.yximgs.com/upic/2023/07/17/19/BMjAyMzA3MTcxOTU2MzRfMjk1MTM4ODg1MV8xMDgyMDUyMDU3NDlfMF8z_b_B8e273726059bf96d2da15dec04ea7c35.mp4",
     autoplay: false,
     playsinline: true,
     preload: "auto",
@@ -84,7 +84,8 @@ var player = new Aliplayer(
   }
 );
  
-var urlCon = "https://sp.4n2.cn/?api=tm"
+var urlCon = "https://txmov2.a.yximgs.com/upic/2023/07/17/19/BMjAyMzA3MTcxOTU2MzRfMjk1MTM4ODg1MV8xMDgyMDUyMDU3NDlfMF8z_b_B8e273726059bf96d2da15dec04ea7c35.mp4"
+
 
 var list = document.getElementById('optionList')
 
@@ -124,7 +125,8 @@ function triggerFunction(option) {
   var urlStr = (typeof option === 'undefined' || option === null) ? "tm" : option;
   if(option == "pc"){
     urlCon = "https://www.cunshao.com/666666/api/web.php"
-  }else{
+  }else if(option == "ikun"){urlCon ="https://txmov2.a.yximgs.com/upic/2023/07/17/19/BMjAyMzA3MTcxOTU2MzRfMjk1MTM4ODg1MV8xMDgyMDUyMDU3NDlfMF8z_b_B8e273726059bf96d2da15dec04ea7c35.mp4" }
+  else{   
     urlCon = urlNum + urlStr
   };
   changeVideo();
